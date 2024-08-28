@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .heroimage {
+            background: url(https://c0.wallpaperflare.com/preview/324/740/911/closeup-communication-computer-connection.jpg) no-repeat;
+            background-size: cover;
+            padding: 180px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* create a layer between bgimage and text */
+        .heroimage::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* background-color: rgba(0, 0, 0, 0.7); */
+            background: linear-gradient(50deg, rgba(102, 26, 141, 0.7), rgba(135, 16, 32, 0.7));
+            z-index: -1;
+        }
+
+        .text {
+
+            text-align: center;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .nav {
+            height: 80px;
+            width: 100%;
+            background-color: blue;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .login {
+            margin: 140px auto;
+            width: fit-content;
+            padding: 30px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 15px rgb(22, 22, 22);
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: whitesmoke;
+            letter-spacing: 2px;
+        }
+
+        .row {
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type="text"],
+        [type="password"],
+        [type="email"],
+        [type="number"] {
+            height: 20px;
+            width: 300px;
+            font-size: 20px;
+            padding: 4px 8px;
+            border: none;
+            border-bottom: 1px solid whitesmoke;
+            background-color: black;
+            letter-spacing: 2px;
+        }
+
+        .icon {
+            height: 28px;
+            width: 30px;
+            border-bottom: 1px solid white;
+            padding: 4px;
+            display: grid;
+            place-content: center;
+            color: rgb(0, 0, 0);
+            font-size: 19px;
+
+        }
+
+        :focus-visible {
+            outline: none;
+        }
+
+        ::placeholder {
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .row button {
+            padding: 15px 30px;
+            border-radius: 25px;
+            background-color: crimson;
+            border: none;
+            cursor: pointer;
+            font-size: 17px;
+
+        }
+    </style>
+
+<body>
+    <div class="nav">
+        <h2>contact-us-page</h2>
+    </div>
+    <div class="heroimage">
+
+        <div class="text">
+            <h1>CONTACT US</h1>
+        </div>
+    </div>
+
+
+    <body>
+        <div class="container">
+
+
+            <form action="#">
+                <div class="row">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <div>
+                        <input type="text" name="" id="" placeholder="Username">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div>
+                        <input type="password" name="" id="" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <input type="email" name="" id="" placeholder="Email id">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <input type="number" name="" id="" placeholder="Phone no">
+                    </div>
+                </div>
+
+               
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <button type="submit">Sign in</button>
+                </div>
+                <div class="row">
+                    <a href="">Forget Password?</a>
+                </div>
+
+
+
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="row">
+       
+<div class="col-sm-8">
+
+<form class="form-horizontal" id="register" >
+    <div class="rows">
+            <div class="form-group">
+            <label class="control-label col-sm-5" >NAME :</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="txtname" id="txtname" placeholder="Enter Name"/>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-5" >PASSWORD :</label>
+            <div class="col-sm-5">
+                <input type="password" class="form-control" name="txtpass" id="txtpass" placeholder="Enter Password" />
+            </div>
+        </div>
+                
+        <div class="form-group">
+            <label class="control-label col-sm-5" >ADDRESS :</label>
+            <div class="col-sm-5">
+                <textarea class="form-control" id ="txtaddress" name="txtaddress"></textarea>
+            </div>
+        </div>	
+        
+        <div class="form-group">
+            <label class="control-label col-sm-5" >DOB :</label>
+            <div class="col-sm-5">
+                <input type="date" class="form-control" id="datedob" name="datedob" id="datepicker" />
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-8" >GENDER :</label>
+            <div class="col-sm-8">
+                <input type="radio" name="rbtngender" value="Male" /> Male
+                <input type="radio" name="rbtngender" value="Female" /> Female
+                <input type="radio" name="rbtngender" value="others" /> Others
+            </div>
+        </div>
+                    
+        <div class="form-group">
+            <label class="control-label col-sm-5" >MOBILE NO. :</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="txtmobile" name="txtmobile" />
+            </div>
+            
+        </div> -->
+    </body>
+
+</html>
+</body>
+
+</html>
